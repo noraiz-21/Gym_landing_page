@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="sytlesheet" href="gym.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(244.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 22px;
+        width: 8%
+    }
+
+    .mid {
+        display: block;
+        margin: 22px auto;
+        width: 51%;
+    }
+
+    .right {
+        
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 22px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 25px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .left img {
+        display: block;
+        width: 40px;
+        filter: invert(100%);
+        text-align: center;
+        padding: 0px 0px 0px 50px;
+        cursor: pointer;
+        
+    }
+    .left div :hover{
+        color: rgb(190, 110, 4);
+    }
+    .left div{
+        text-align: center;
+        cursor: pointer;
+    }
+    .btn{
+        margin: 6px 9px;
+        font-size: 20px;
+        background-color: #353535;
+        color: white;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 5px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+    }
+    .btn:hover{
+        background-color: rgb(47, 47, 47);
+        color: rgb(255, 255, 255);
+        border: red;
+    }
+    .container{
+        border: 2px solid rgb(231, 231, 231);
+        margin: 69px 78px;
+        padding: 20px 14px 21px 0px;
+        width: 33%;
+        border-radius: 22px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 376px;
+        padding:11px;
+        border:2px solid black;
+        margin: 5px auto;
+        font-size: 18px;
+        border-radius: 12px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container h1{
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        top: 15px;
+        left: 120px;
+        font-weight: 600;
+    }
+    .container button{
+        display: block;
+        width: 63%;
+        margin: 11px auto;
+        border: 2px solid black;
+        border-radius: 12px;
+        padding: 11px;
+        cursor: pointer;
+    }
+    .container button :hover{
+        color: aliceblue;
+        
+    }
+</style>
+
+<body>
+    <div class="left">
+        <img src="lo.png" alt="Logo ">
+        <div class="text">
+            Fitness Freaks
+        </div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active"> Home</a></li>
+            <li><a href="#"> About us </a> </li>
+            <li><a href="#"> Fitness calculator</a> </li>
+            <li><a href="#"> Contact us</a> </li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn"> Quick Demo</button>
+        <button class="btn"> Mail Us</button>
+    </div>
+    <div class="container">
+       <h1> Join Best Gym  Now </h1>
+       <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Location">
+        </div>
+        <button class="btn"> Submit Now </button>
+       </form>
+    </div>
+</body>
+
+</html>
